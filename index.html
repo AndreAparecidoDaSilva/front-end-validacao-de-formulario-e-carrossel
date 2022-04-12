@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo">LOJA VERDE</h1>
+        <input type="text" name="" id="" class="busca">
+        <button class="pbusca">Buscar</button>
+
+    </header>
+    <nav>
+        <a href="#">INÍCIO</a>
+        <a href="#">ALIMENTOS</a>
+        <a href="#">ENCAPSULADOS</a>
+        <a href="#">FLORAIS</a>
+        <a href="#">SUPLEMENTOS</a>
+        <a href="#">AROMATERAPIA</a>
+
+    </nav>
+
+
+    <div class="carrossel">
+        <div class="container" id="img">
+            <a href="#"><img src="imagens/slide01.png" alt="Óleos essenciais puros e naturais"></a>
+            <a href="#"><img src="imagens/slide2.png" alt=""></a>
+            <a href="#"><img src="imagens/slide3.png" alt=""></a>
+            <a href="#"><img src="imagens/slide4.png" alt=""></a>
+            <a href="#"><img src="imagens/slide5.png" alt=""></a>
+
+        </div>
+        <div class="carrosselBotoes">
+            <button onclick="retrocede();">
+                &#10094;
+            </button>
+
+            <button class="next" onclick="avanca()">
+                &#10095;
+            </button>
+        </div>
+        <div class="dots">
+            <span class="dot active" onclick="showSlides(0)"></span>
+            <span class="dot" onclick="showSlides(1)"></span>
+            <span class="dot" onclick="showSlides(2)"></span>
+            <span class="dot" onclick="showSlides(3)"></span>
+            <span class="dot" onclick="showSlides(4)"></span>
+        </div>
+    </div>
+
+    <h2 class="subtitulo">NOSSOS PRODUTOS</h2>
+
+    <div class="produtos">
+
+        <div class="produto">
+            <img src="imagens/cacau_em_po_natural_granel_45492_1_20201127111034.png"
+                alt="Cacau em pó Natural a granel ">
+            <p>CACAU EM PÓ NATURAL</p>
+            <p class="preco">R$ 4,99</p>
+            <a href="detalheProduto.html"><button>COMPRAR</button></a>
+        </div>
+
+        <div class="produto">
+            <img src="imagens/cha_mate_tostado_granel_44911_1_20200629165320.png" alt="Chá Mate Tostado a granel">
+            <p>CHÁ MATE TOSTADO</p>
+            <p class="preco">R$ 4,49</p>
+            <button>COMPRAR</button>
+        </div>
+
+        <div class="produto">
+            <img src="imagens/leite_de_coco_em_po_vegano_granel_1140_1_20200701192846.png"
+                alt="Leite de coco em pó vegano a granel">
+            <p>LEITE DE COCO EM PÓ - VEGANO</p>
+            <p class="preco">R$ 16,76</p>
+            <button>COMPRAR</button>
+        </div>
+
+        <div class="produto">
+            <img src="imagens/levedura_nutricional_granel_45468_1_20201026092914.png"
+                alt="Levedura nutricional a granel">
+            <p>LEVEDURA NUTRICIONAL</p>
+            <p class="preco">R$ 19,98</p>
+            <button>COMPRAR</button>
+        </div>
+
+        <div class="produto">
+            <img src="imagens/paprica_defumada_granel_1100_1_20200628101004.png" alt="Páprica defumada a granel">
+            <p>PÁPRICA DEFUMADA</p>
+            <p class="preco">R$ 3,99</p>
+            <button>COMPRAR</button>
+        </div>
+
+        <div class="produto">
+            <img src="imagens/cha_desincha_granel_45564_1_88e20d17a2abd07b1f48c719516cc3af.png"
+                alt="Chá desincha a granel">
+            <p>CHÁ DESINCHA</p>
+            <p class="preco">R$ 4,99</p>
+            <button>COMPRAR</button>
+        </div>
+
+        <div class="produto">
+            <img src="imagens/camomila_granel_1006_1_20200630104517.png" alt="Camomila a granel">
+            <p>CAMOMILA</p>
+            <p class="preco">R$ 6,27</p>
+            <button>COMPRAR</button>
+        </div>
+
+        <div class="produto">
+            <img src="imagens/hibisco_em_flor_granel_640_1_20200701192846.png" alt="hibisco em flor a granel">
+            <p>HIBISCO EM FLOR</p>
+            <p class="preco">R$ 4,49</p>
+            <button>COMPRAR</button>
+        </div>
+    </div>
+    <h2 class="subtitulo">RECEBA NOSSAS OFERTAS</h2>
+    <form class="cadastro" method="POST" id="formPrincipal" action="sucesso.html">
+
+        <p><span id="Nome" class="erro"><img src="imagens/error.png" alt="">Campo obrigatório!</span></p>
+        <p>
+            <label for="">NOME:</label>
+            <input class="f" type="text" id="nome">
+            <img class="erro" src="imagens/error.png" alt="">
+            <img id="NomOk" class="ok" src="imagens/check.png" alt="">
+        </p>
+        <p><span id="Email" class="erro"><img src="imagens/error.png" alt="">E-mail inválido!</span></p>
+        <p>
+            <label for="">E-MAIL:</label>
+            <input class="f" name="" id="email">
+            <img id="EmailOk" class="ok" src="imagens/check.png" alt="">
+        </p>
+        <p><span id="Tel" class="erro"><img src="imagens/error.png" alt="">Telefone Inválido!</span></p>
+        <p>
+            <label for="">TELEFONE:</label>
+            <input class="f" type="tel" id="telefone" maxlength="14">
+            <img id="TelOk" class="ok" src="imagens/check.png" alt="">
+        </p>
+        <input type="submit" value="CADASTRAR" class="cadastrar">
+    </form>
+    <footer>
+
+    </footer>
+    <script src="js/javascript.js"></script>
+</body>
+
+</html>

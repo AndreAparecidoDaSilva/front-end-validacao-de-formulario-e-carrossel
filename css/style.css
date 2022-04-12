@@ -1,0 +1,369 @@
+body {
+    max-width: 1300px;
+    min-width: 320px;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100px;
+    max-height: 400px;
+    margin: auto;
+    background: #28FB56;
+
+}
+
+.busca {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 0px;
+    margin-left: 12%;
+    width: 250px;
+    height: 35px;
+    border-radius: 25px;
+    border-style: none;
+    font-size: 20px;
+}
+
+.pbusca {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 168px;
+    height: 44px;
+    top: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    text-shadow:.02em .02em #00000063;
+    color: #FFFFFF;
+    background-color: #28FB56;
+    border: none;
+}
+input:focus {
+    outline: 0;
+} 
+.pbusca:hover {
+    color: #ffffffde;
+    transition-duration: .3s;
+    border-radius: 5px;
+}
+.pbusca:active {
+    color: #ffffffbb;
+    border-radius: 5px;
+}
+
+.titulo {
+    margin-left: 25%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 5%;
+    padding-top: 13px;
+    text-shadow:.02em .02em #00000063;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 84px;
+    color: #FFFFFF;
+    
+}
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 50px;
+    max-height: 150px;
+    left: 0px;
+    top: 117px;
+    margin: auto;
+    background: #20A200;
+}
+
+nav > a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding-left: 30px;
+    padding-right: 10px;
+    padding-top: 13px;
+    transition-duration: .3s;
+    text-shadow:.02em .02em #00000063;
+}
+
+nav > a:hover {
+    background-color: #1a7703bb;
+    color: #012007;
+    border-radius: 5px;
+}
+
+.carrossel {
+    overflow: hidden;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrossel .carrosselBotoes {
+    display: flex;
+    width: 100%;
+}
+
+.carrossel .carrosselBotoes button {
+    position: relative;
+    top: -270px;
+    border-radius: 50px;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    color: #FFF;
+    font-size: 2em;
+}
+
+.next {
+    margin-left: 90.9%;
+}
+
+.carrossel .carrosselBotoes button:hover {
+
+    background-color: #1a7703bb;
+}
+
+
+.dots {
+    position: relative;
+    top: -100px;
+    text-align: center;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  text-align: center;
+}
+.active, .dot:hover {
+  background-color: #28FB56;
+}
+.subtitulo {
+    color: #28FB56;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    margin: auto;
+    padding-top: 30px;
+    text-shadow:.02em .02em #00000063;
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.produtos .produto {
+    width: 325px;
+    margin-bottom: 100px;
+}
+
+.produtos .produto img {
+    width: 100%;
+}
+
+.produtos .produto button {
+    width: 200px;
+    padding:10px;
+    margin-left: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    text-shadow:.02em .02em #00000063;
+    color: #FFFFFF;
+    background-color: #28FB56;
+    border: none;
+    box-shadow:.02em .02em #00000063; ;
+    transition-duration: .3s;
+}
+
+.produtos .produto button:hover {
+    width: 200px;
+    padding:10px;
+    margin-left: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    text-shadow:.02em .02em #00000063;
+    color: #FFFFFF;
+    background-color: #20A200;
+    border: none;
+    box-shadow:.02em .02em #00000063; ;
+}
+
+.produtos .produto p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.produtos .produto .preco {
+    text-align: center;
+    text-shadow:.02em .02em #00000063;
+    font-weight: bold;
+    color: #28FB56;
+    font-size: 35px;
+}
+
+form {
+
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-shadow:.02em .02em #00000063;
+}
+
+.cadastrar {
+    width: 280px;
+    padding:10px;
+    margin-right: 21.5%;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    text-shadow:.02em .02em #00000063;
+    color: #FFFFFF;
+    background-color: #28FB56;
+    border: none;
+}
+
+.f {
+    position: relative;
+    margin: auto;
+    width: 69%;
+    height: 35px;
+    border-radius: 25px;
+    border-style: none;
+    background: #D7F9C3;
+    font-size: 20px;
+}
+
+footer {
+    margin-top: 100px;
+    padding-top: 90px;
+    background-color: #C4C4C4;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.detalhe {
+    width: 100%;
+}
+
+.beneficios {
+    margin: 0px 31px 32px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.beneficios h2 {
+    margin: 60px 31px 0px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.detalhedoProduto {
+    display: flex;
+    margin-top: 70px;
+    max-height: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.detalhedoProduto img {
+    height: 41%;
+    width: 41%;
+    box-shadow: .02em .02em #00000063;
+}
+
+.descrição {
+    margin: 5px 31px 32px 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.detalhes {
+    margin: 15px 31px 32px 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.cadastro {
+    width: 53%;
+    margin: 50px 0px 0px 0px;
+    text-align: end;
+}
+
+.quantidade {
+    width: 30px;
+    height: 20px;
+    margin-left: 13%;
+}
+
+.preco {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    margin-left: 11%;
+}
+
+.comprar {
+    margin-left: 10%;
+    margin-top: 20px;
+    width: 250px;
+    padding:10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    text-shadow:.02em .02em #00000063;
+    color: #FFFFFF;
+    background-color: #28FB56;
+    border: none;
+    box-shadow:.02em .02em #00000063; ;
+    transition-duration: .3s;
+}
+.erro {
+    display: none;
+}
+.ok {
+    display: none;
+}
+.mostrar {
+    display: flex;
+}
